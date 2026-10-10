@@ -1,0 +1,7 @@
+services:
+  python_dsn:
+    image: python:latest
+    volumes:
+      - ./:/usr/src/myapp
+    working_dir: /usr/src/myapp
+    entrypoint: sleep infinity
